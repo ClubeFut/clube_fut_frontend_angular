@@ -7,7 +7,7 @@ import { RouterLink } from "@angular/router";
   imports: [
     CommonModule,
     RouterLink
-  ]],
+  ],
   templateUrl: './login.html',
   styleUrl: './login.scss',
 })
