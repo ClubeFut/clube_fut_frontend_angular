@@ -31,6 +31,11 @@ export class Conta {
     email: string,
     senha: string
   ){
+    const body = {
+      email, 
+      senha
+    };
 
+    return this.http.post(this.urlContaAPILocal + "/realizar-login", body);
   }
 }

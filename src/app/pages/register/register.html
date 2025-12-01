@@ -19,28 +19,28 @@
             @if (this.form.tipoConta === "assossiacao") {
                 <div class="form__camp">
                     <label>Nome Assosiação</label>
-                    <input type="text">
+                    <input type="text" [(ngModel)]="form.nomeCOmpleto">
                 </div><!--form__camp-->
             }@else if (this.form.tipoConta === "membro") {
                 <div class="form__camp">
                     <label>Nome Completo</label>
-                    <input type="text">
+                    <input type="text" [(ngModel)]="form.nomeCOmpleto">
                 </div><!--form__camp-->
             }
 
             <div class="form__camp">
                 <label>Email</label>
-                <input type="email">
+                <input type="email" [(ngModel)]="form.email">
             </div><!--form__camp-->
 
             <div class="form__camp">
                 <label>Senha</label>
-                <input type="password">
+                <input type="password" [(ngModel)]="form.senha">
             </div><!--form__camp-->
 
             <div class="form__camp">
                 <label>Confirmar Senha</label>
-                <input type="password">
+                <input type="password" [(ngModel)]="confirmarSenha">
             </div><!--form__camp-->
 
             <button type="submit">CRIAR CONTA</button>

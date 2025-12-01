@@ -62,7 +62,6 @@ export class Register {
         this.callbackTipo = "";
       }, 5000);
     }
-
   }
 
   registrarConta(){
@@ -82,5 +81,4 @@ export class Register {
       }
     })
   }
-
 }

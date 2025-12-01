@@ -1,2 +1,24 @@
-<p>login works!</p>
-<a [routerLink]="['/cadastro']">Cadastro</a>
+<div class="iniciar__sessao__container">
+    <aside>
+        <img src="" alt="">
+    </aside>
+
+    <main>
+        <h2>Inicie já sua sessão</h2>
+
+        <form action="">
+            <div class="form__camp">
+                <label>Email</label>
+                <input type="email">
+            </div><!--form__camp-->
+
+            <div class="form__camp">
+                <label>Senha</label>
+                <input type="password">
+            </div><!--form__camp-->
+            <button type="submit">FAZER LOGIN</button>
+        </form>
+
+        <p>Não tem conta? Clique <a [routerLink]="['/cadastro']">  aqui</a></p> 
+    </main>
+</div><!--iniciar__sessao__container-->

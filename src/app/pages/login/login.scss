@@ -1,0 +1,64 @@
+$bg__color: #e9e1e1;
+$color__text: #333;
+$bg__color__button: #0b3eac;
+
+main{
+    padding: 120px 40px;
+    width: 100dvw;
+    height: 100dvh;
+}
+
+main > h2{
+    font-size: 27px;
+    font-weight: 600;
+    text-align: center;
+    color: $color__text;
+}
+
+form{
+    margin-top: 40px;
+    width: 100%;
+    height: auto;
+}
+
+form > .form__camp{
+    display: flex;
+    flex-direction: column;
+}
+
+.form__camp > label{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.form__camp > input{
+    margin-bottom: 15px;
+    outline: 0;
+    border-radius: 5px;
+    border: 1px solid $color__text;
+    width: 100%;
+    height: 40px;
+    padding: 8px 15px;
+}
+
+form > button{
+    width: 100%;
+    height: 45px;
+    font-size: 16px;
+    font-weight: 700;
+    color: $bg__color;
+    background-color: $bg__color__button;
+    border: 0;
+    border-radius: 5px;
+}
+
+main > p{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+main > p > a{
+    margin-left: 3px;
+}
