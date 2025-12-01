@@ -3,7 +3,7 @@ $color__text: #333;
 $bg__color__button: #0b3eac;
 
 main{
-    padding: 60px 40px;
+    padding: 30px 40px;
     width: 100dvw;
     height: 100dvh;
 }
@@ -16,7 +16,7 @@ main > h2{
 }
 
 form{
-    margin-top: 50px;
+    margin-top: 40px;
     width: 100%;
     height: auto;
 }
@@ -34,7 +34,7 @@ form > .form__camp{
 
 .form__camp > input,
 .form__camp > select{
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     outline: 0;
     border-radius: 5px;
     border: 1px solid $color__text;
