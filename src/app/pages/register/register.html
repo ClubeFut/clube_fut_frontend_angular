@@ -1,0 +1,51 @@
+<div class="cadastro__container">
+    <aside>
+        <img src="" alt="">
+    </aside>
+
+    <main>
+        <h2>Faça já seu cadastro</h2>
+
+        <form action="">
+            <div class="form__camp">
+                <label>Tipo Conta</label>
+                <select name="tipoConta" [(ngModel)]="form.tipoConta">
+                    <option value="">Escolha uma opção</option>
+                    <option value="assossiacao">Assossiação</option>
+                    <option value="membro">Membro</option>
+                </select>
+            </div><!--form__camp-->
+
+            @if (this.form.tipoConta === "assossiacao") {
+                <div class="form__camp">
+                    <label>Nome Assosiação</label>
+                    <input type="text">
+                </div><!--form__camp-->
+            }@else if (this.form.tipoConta === "membro") {
+                <div class="form__camp">
+                    <label>Nome Completo</label>
+                    <input type="text">
+                </div><!--form__camp-->
+            }
+
+            <div class="form__camp">
+                <label>Email</label>
+                <input type="email">
+            </div><!--form__camp-->
+
+            <div class="form__camp">
+                <label>Senha</label>
+                <input type="password">
+            </div><!--form__camp-->
+
+            <div class="form__camp">
+                <label>Confirmar Senha</label>
+                <input type="password">
+            </div><!--form__camp-->
+
+            <button type="submit">CRIAR CONTA</button>
+        </form>
+
+        <p>Já tem conta? Clique <a [routerLink]="['/iniciar-sessao']"> aqui</a></p> 
+    </main>
+</div><!--cadastro__container-->
