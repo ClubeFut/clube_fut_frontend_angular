@@ -1,4 +1,4 @@
-$bg__color: #134DEB;
+$bg__color: #134FEE;
 $color__text: #333;
 $bg__color__button: #0b3eac;
 $mancha__verde: #00A069;
@@ -24,6 +24,7 @@ $color__h2__form: #333;
             position: relative;
             left: 50%;
             transform: translateX(-50%);
+            border-radius: 50%;
         }
 
         h1{
