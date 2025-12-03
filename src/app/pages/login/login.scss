@@ -59,9 +59,19 @@ $color__h2__form: #333;
             .form__camp{
                 display: flex;
                 flex-direction: column;
+                position: relative;
 
                 &:first-of-type{
-                    margin-top: 25px;
+                    margin: 25px 0 20px 0;
+
+                    svg{
+                        &:first-of-type{
+                            position: absolute;
+                            top: 35px;
+                            left: 15px;
+                            z-index: 990;
+                        }
+                    }
                 }
 
                 label{
@@ -75,12 +85,12 @@ $color__h2__form: #333;
                     border-radius: 12px;
                     border: 1px solid $border__color__input;
                     background-color: $bg__color__input;
-                    padding: 8px 15px;
+                    padding: 8px 50px;
                 }
 
                 svg{
-                    width: 25px;
-                    height: 25px;
+                    width: 30px;
+                    height: 30px;
                 }
             }
 
