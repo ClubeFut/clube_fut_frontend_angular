@@ -11,6 +11,7 @@ $bg__aqua: #F3E8FF;
     min-height: 100dvh;
     height: auto;
     width: 100dvw;
+    padding-bottom: 120px;
 
     .estatistica__time__individual{
         display: grid;
@@ -246,5 +247,11 @@ $bg__aqua: #F3E8FF;
                 }
             }
         }
+    }
+
+    footer{
+        position: fixed;
+        bottom: 0;
+        left: 0;
     }
 }
