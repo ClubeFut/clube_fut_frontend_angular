@@ -1,0 +1,76 @@
+$bg__main: #F0FBF7;
+$bg__estatistica__unica: #fff;
+$bg__estatistica__unica__azul: #2B7FFF;
+$bg__estatistica__unica__verde: #00C950;
+$bg__estatistica__unica__laranja: #FF6900;
+$bg__estatistica__unica__lilas: #AD46FF;
+
+.home__container{
+    background-color: $bg__main;
+    min-height: 100dvh;
+    height: auto;
+    width: 100dvw;
+
+    .estatistica__time__individual{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        justify-items: center;
+        margin-top: 30px;
+        
+        .estatistica__unica{
+            width: 165px;
+            max-width: 100%;
+            background-color: red;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: $bg__estatistica__unica;
+            box-shadow: 0px 0px 0 2px rgba(0, 0, 0, 0.1);
+
+            &:nth-child(3), &:nth-child(4){
+                margin-top: 20px;
+            }
+
+            svg{
+                width: 55px;
+                height: 55px;
+                padding: 15px;
+                border-radius: 15px;
+            }
+
+            &:nth-of-type(1){
+                svg{
+                    background-color: $bg__estatistica__unica__azul;
+                }
+            }
+
+            &:nth-of-type(2){
+                svg{
+                    background-color: $bg__estatistica__unica__verde;
+                }
+            }
+
+            &:nth-of-type(3){
+                svg{
+                    background-color: $bg__estatistica__unica__laranja;
+                }
+            }
+
+            &:nth-of-type(4){
+                svg{
+                    background-color: $bg__estatistica__unica__lilas;
+                }
+            }
+
+            h2{
+                font-weight: 400;
+                margin-top: 10px;
+            }
+
+            h3{
+                font-weight: 300;
+                margin-top: 6px;
+                font-size: 16px;
+            }
+        }
+    }
+}
