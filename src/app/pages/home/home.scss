@@ -4,6 +4,7 @@ $bg__estatistica__unica__azul: #2B7FFF;
 $bg__estatistica__unica__verde: #00C950;
 $bg__estatistica__unica__laranja: #FF6900;
 $bg__estatistica__unica__lilas: #AD46FF;
+$bg__aqua: #F3E8FF;
 
 .home__container{
     background-color: $bg__main;
@@ -70,6 +71,95 @@ $bg__estatistica__unica__lilas: #AD46FF;
                 font-weight: 300;
                 margin-top: 6px;
                 font-size: 16px;
+            }
+        }
+    }
+
+    .proximos__jogos{
+        margin-top: 30px;
+        padding: 0 20px;
+
+        .proximos__jogos__titulo{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            h2{
+                font-size: 21px;
+                font-weight: 600;
+            }
+
+            svg{
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        .proximos__jogos__wrapper{
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+
+            .proximos__jogos__unico{
+                display: flex;
+                flex-direction: column;
+                box-shadow: 0px 0px 0 2px rgba(0, 0, 0, 0.1);
+                border-radius: 10px;
+                background-color: #ffff;
+                padding: 20px;
+
+                &:last-of-type{
+                    margin-top: 15px;
+                }
+
+                .times__e__vs{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .times{
+                        h2{
+                            font-size: 18px;
+                            font-weight: 400;
+                            width: 120px;
+
+                            &:last-of-type{
+                                padding-top: 5px;
+                            }
+                        }
+                    }
+
+                    > h2{
+                        font-size: 18px;
+                        font-weight: 400;
+                        background-color: $bg__aqua;
+                        padding: 7px 18px;
+                        border-radius: 10px;
+                        width: 60px;
+                        text-align: center;
+                    }
+                }
+
+                .separador__linha{
+                    width: 100%;
+                    height: 1px;
+                    background-color: #c3c1c1;
+                    margin: 22px 0 15px 0;
+                }
+
+                .data__e__local{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    
+                    .data,
+                    .local{
+                        font-size: 11px;
+                        font-weight: 300;
+                        color: #777;
+                    }
+                }
             }
         }
     }
