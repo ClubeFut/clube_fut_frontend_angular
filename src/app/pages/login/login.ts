@@ -1,18 +1,20 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterLink } from "@angular/router";
+import { RouterLink, RouterModule } from "@angular/router";
 import { Conta } from '../../services/conta';
 
 @Component({
   selector: 'app-login',
   imports: [
     CommonModule,
-    RouterLink
+    RouterModule
   ],
   templateUrl: './login.html',
   styleUrl: './login.scss',
 })
 export class Login {
+  senhaSendoExibida: boolean = false;
+
   /**dados form */
   form = {
     email: "",
@@ -59,5 +61,13 @@ export class Login {
         console.log(err);
       }
     })
+  }
+
+  mostrarSenha(){
+    this.senhaSendoExibida = true;
+  }
+
+  esconderSenha(){
+    this.senhaSendoExibida = false;
   }
 }

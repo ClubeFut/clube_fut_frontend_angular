@@ -1,51 +1,99 @@
 <div class="cadastro__container">
-    <aside>
-        <img src="" alt="">
-    </aside>
+    <header>
+        <img src="/logo-login-removebg-preview.png" alt="Logo Login">
+
+        <h2>Criar Conta</h2>
+        <h3>Junte-se a nossa Associação</h3>
+    </header>
 
     <main>
-        <h2>Faça já seu cadastro</h2>
-
         <form action="">
             <div class="form__camp">
-                <label>Tipo Conta</label>
-                <select name="tipoConta" [(ngModel)]="form.tipoConta">
-                    <option value="">Escolha uma opção</option>
-                    <option value="assossiacao">Assossiação</option>
+                <label>Nome Completo</label>
+                <input type="text" placeholder="Seu nome">
+                
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <circle cx="12" cy="6" r="4" stroke="#c3c1c1" stroke-width="1.5"></circle> <path d="M20 17.5C20 19.9853 20 22 12 22C4 22 4 19.9853 4 17.5C4 15.0147 7.58172 13 12 13C16.4183 13 20 15.0147 20 17.5Z" stroke="#c3c1c1" stroke-width="1.5"></path> </g></svg>
+            </div><!--form__camp-->
+
+            <div class="form__camp">
+                <label>Email</label>
+                <input type="email" placeholder="seuemail@gmail.com">
+                
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g clip-path="url(#clip0_15_17)"> <rect width="24" height="24"></rect> <path d="M3 17.5V6.5C3 5.94772 3.44772 5.5 4 5.5H12H20C20.5523 5.5 21 5.94772 21 6.5V17.5C21 18.0523 20.5523 18.5 20 18.5H4C3.44772 18.5 3 18.0523 3 17.5Z" stroke="#6666" stroke-linejoin="round"></path> <path d="M3 6L12 12L21 6" stroke="#6666" stroke-linejoin="round"></path> </g> <defs> <clipPath id="clip0_15_17"> <rect width="24" height="24" fill="white"></rect> </clipPath> </defs> </g></svg>
+            </div><!--form__camp-->
+
+            <div class="form__camp">
+                <label>Telefone</label>
+                <input type="text" placeholder="(11) 1 1111-1111">
+                
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M16.1007 13.359L15.5719 12.8272H15.5719L16.1007 13.359ZM16.5562 12.9062L17.085 13.438H17.085L16.5562 12.9062ZM18.9728 12.5894L18.6146 13.2483L18.9728 12.5894ZM20.8833 13.628L20.5251 14.2869L20.8833 13.628ZM21.4217 16.883L21.9505 17.4148L21.4217 16.883ZM20.0011 18.2954L19.4723 17.7636L20.0011 18.2954ZM18.6763 18.9651L18.7459 19.7119H18.7459L18.6763 18.9651ZM8.81536 14.7266L9.34418 14.1947L8.81536 14.7266ZM4.00289 5.74561L3.2541 5.78816L3.2541 5.78816L4.00289 5.74561ZM10.4775 7.19738L11.0063 7.72922H11.0063L10.4775 7.19738ZM10.6342 4.54348L11.2346 4.09401L10.6342 4.54348ZM9.37326 2.85908L8.77286 3.30855V3.30855L9.37326 2.85908ZM6.26145 2.57483L6.79027 3.10667H6.79027L6.26145 2.57483ZM4.69185 4.13552L4.16303 3.60368H4.16303L4.69185 4.13552ZM12.0631 11.4972L12.5919 10.9654L12.0631 11.4972ZM16.6295 13.8909L17.085 13.438L16.0273 12.3743L15.5719 12.8272L16.6295 13.8909ZM18.6146 13.2483L20.5251 14.2869L21.2415 12.9691L19.331 11.9305L18.6146 13.2483ZM20.8929 16.3511L19.4723 17.7636L20.5299 18.8273L21.9505 17.4148L20.8929 16.3511ZM18.6067 18.2184C17.1568 18.3535 13.4056 18.2331 9.34418 14.1947L8.28654 15.2584C12.7186 19.6653 16.9369 19.8805 18.7459 19.7119L18.6067 18.2184ZM9.34418 14.1947C5.4728 10.3453 4.83151 7.10765 4.75168 5.70305L3.2541 5.78816C3.35456 7.55599 4.14863 11.144 8.28654 15.2584L9.34418 14.1947ZM10.7195 8.01441L11.0063 7.72922L9.9487 6.66555L9.66189 6.95073L10.7195 8.01441ZM11.2346 4.09401L9.97365 2.40961L8.77286 3.30855L10.0338 4.99296L11.2346 4.09401ZM5.73263 2.04299L4.16303 3.60368L5.22067 4.66736L6.79027 3.10667L5.73263 2.04299ZM10.1907 7.48257C9.66189 6.95073 9.66117 6.95144 9.66045 6.95216C9.66021 6.9524 9.65949 6.95313 9.659 6.95362C9.65802 6.95461 9.65702 6.95561 9.65601 6.95664C9.65398 6.95871 9.65188 6.96086 9.64972 6.9631C9.64539 6.96759 9.64081 6.97245 9.63599 6.97769C9.62634 6.98816 9.61575 7.00014 9.60441 7.01367C9.58174 7.04072 9.55605 7.07403 9.52905 7.11388C9.47492 7.19377 9.41594 7.2994 9.36589 7.43224C9.26376 7.70329 9.20901 8.0606 9.27765 8.50305C9.41189 9.36833 10.0078 10.5113 11.5343 12.0291L12.5919 10.9654C11.1634 9.54499 10.8231 8.68059 10.7599 8.27309C10.7298 8.07916 10.761 7.98371 10.7696 7.96111C10.7748 7.94713 10.7773 7.9457 10.7709 7.95525C10.7677 7.95992 10.7624 7.96723 10.7541 7.97708C10.75 7.98201 10.7451 7.98759 10.7394 7.99381C10.7365 7.99692 10.7335 8.00019 10.7301 8.00362C10.7285 8.00534 10.7268 8.00709 10.725 8.00889C10.7241 8.00979 10.7232 8.0107 10.7223 8.01162C10.7219 8.01208 10.7212 8.01278 10.7209 8.01301C10.7202 8.01371 10.7195 8.01441 10.1907 7.48257ZM11.5343 12.0291C13.0613 13.5474 14.2096 14.1383 15.0763 14.2713C15.5192 14.3392 15.8763 14.285 16.1472 14.1841C16.28 14.1346 16.3858 14.0763 16.4658 14.0227C16.5058 13.9959 16.5392 13.9704 16.5663 13.9479C16.5799 13.9367 16.5919 13.9262 16.6024 13.9166C16.6077 13.9118 16.6126 13.9073 16.6171 13.903C16.6194 13.9008 16.6215 13.8987 16.6236 13.8967C16.6246 13.8957 16.6256 13.8947 16.6266 13.8937C16.6271 13.8932 16.6279 13.8925 16.6281 13.8923C16.6288 13.8916 16.6295 13.8909 16.1007 13.359C15.5719 12.8272 15.5726 12.8265 15.5733 12.8258C15.5735 12.8256 15.5742 12.8249 15.5747 12.8244C15.5756 12.8235 15.5765 12.8226 15.5774 12.8217C15.5793 12.82 15.581 12.8183 15.5827 12.8166C15.5862 12.8133 15.5895 12.8103 15.5926 12.8074C15.5988 12.8018 15.6044 12.7969 15.6094 12.7929C15.6192 12.7847 15.6265 12.7795 15.631 12.7764C15.6403 12.7702 15.6384 12.773 15.6236 12.7785C15.5991 12.7876 15.501 12.8189 15.3038 12.7886C14.8905 12.7253 14.02 12.3853 12.5919 10.9654L11.5343 12.0291ZM9.97365 2.40961C8.95434 1.04802 6.94996 0.83257 5.73263 2.04299L6.79027 3.10667C7.32195 2.578 8.26623 2.63181 8.77286 3.30855L9.97365 2.40961ZM4.75168 5.70305C4.73201 5.35694 4.89075 4.9954 5.22067 4.66736L4.16303 3.60368C3.62571 4.13795 3.20329 4.89425 3.2541 5.78816L4.75168 5.70305ZM19.4723 17.7636C19.1975 18.0369 18.9029 18.1908 18.6067 18.2184L18.7459 19.7119C19.4805 19.6434 20.0824 19.2723 20.5299 18.8273L19.4723 17.7636ZM11.0063 7.72922C11.9908 6.7503 12.064 5.2019 11.2346 4.09401L10.0338 4.99295C10.4373 5.53193 10.3773 6.23938 9.9487 6.66555L11.0063 7.72922ZM20.5251 14.2869C21.3429 14.7315 21.4703 15.7769 20.8929 16.3511L21.9505 17.4148C23.2908 16.0821 22.8775 13.8584 21.2415 12.9691L20.5251 14.2869ZM17.085 13.438C17.469 13.0562 18.0871 12.9616 18.6146 13.2483L19.331 11.9305C18.2474 11.3414 16.9026 11.5041 16.0273 12.3743L17.085 13.438Z" fill="#c3c1c1"></path> </g></svg>
+            </div><!--form__camp-->
+
+            <div class="form__camp">
+                <label>O que você é?</label>
+
+                <svg fill="#c3c1c1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" enable-background="new 0 0 52 52" xml:space="preserve" stroke="#c3c1c1"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M26.7,42.8c0.8,0,1.5,0.7,1.5,1.5v3.2c0,0.8-0.7,1.5-1.5,1.5h-3.2c-0.8,0-1.5-0.7-1.5-1.5v-3.2 c0-0.8,0.7-1.5,1.5-1.5H26.7z"></path> <path d="M28.2,35.1c0-2.1,1.3-4,3.1-4.8h0.1c5.2-2.1,8.8-7.2,8.8-13.2c0-7.8-6.4-14.2-14.2-14.2 c-7.2,0-13.2,5.3-14.2,12.2v0.1c-0.1,0.9,0.6,1.6,1.5,1.6h3.2c0.8,0,1.4-0.5,1.5-1.1v-0.2c0.7-3.7,4-6.5,7.9-6.5 c4.5,0,8.1,3.6,8.1,8.1c0,2.1-0.8,4-2.1,5.5l-0.1,0.1c-0.9,1-2.1,1.6-3.3,2c-4,1.4-6.7,5.2-6.7,9.4v1.5c0,0.8,0.6,1.4,1.4,1.4h3.2 c0.8,0,1.6-0.6,1.6-1.5L28.2,35.1z"></path> </g> </g></svg>
+
+                <select name="tipoConta" id="" [(ngModel)]="form.tipoConta">
+                    <option value="">Selecione uma opção</option>
+                    <option value="associacao">Associação</option>
                     <option value="membro">Membro</option>
+                    <option value="arbitro">Árbitro</option>
                 </select>
             </div><!--form__camp-->
 
-            @if (this.form.tipoConta === "assossiacao") {
+            @if (form.tipoConta === "membro") {
                 <div class="form__camp">
-                    <label>Nome Assosiação</label>
-                    <input type="text" [(ngModel)]="form.nomeCOmpleto">
+                    <label>Qual time você é?</label>
+
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M3 7L6 4H9C9 4.39397 9.0776 4.78407 9.22836 5.14805C9.37913 5.51203 9.6001 5.84274 9.87868 6.12132C10.1573 6.3999 10.488 6.62087 10.8519 6.77164C11.2159 6.9224 11.606 7 12 7C12.394 7 12.7841 6.9224 13.1481 6.77164C13.512 6.62087 13.8427 6.3999 14.1213 6.12132C14.3999 5.84274 14.6209 5.51203 14.7716 5.14805C14.9224 4.78407 15 4.39397 15 4H18L21 7L20.5785 11.2152C20.542 11.5801 20.1382 11.7829 19.8237 11.5942L18 10.5V18C18 19.1046 17.1046 20 16 20H8C6.89543 20 6 19.1046 6 18V10.5L4.17629 11.5942C3.86184 11.7829 3.45801 11.5801 3.42152 11.2152L3 7Z" stroke="#c3c1c1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+
+                    <select name="" id="">
+                        <option value="">Selecione um time</option>
+                        <option value="time1">Time 1</option>
+                        <option value="time2">Time 2</option>
+                    </select>
                 </div><!--form__camp-->
-            }@else if (this.form.tipoConta === "membro") {
+
                 <div class="form__camp">
-                    <label>Nome Completo</label>
-                    <input type="text" [(ngModel)]="form.nomeCOmpleto">
+                    <label>Qual Associação você é?</label>
+
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M22 22L2 22" stroke="#c3c1c1" stroke-width="1.5" stroke-linecap="round"></path> <path d="M2 11L6.06296 7.74968M22 11L13.8741 4.49931C12.7784 3.62279 11.2216 3.62279 10.1259 4.49931L9.34398 5.12486" stroke="#c3c1c1" stroke-width="1.5" stroke-linecap="round"></path> <path d="M15.5 5.5V3.5C15.5 3.22386 15.7239 3 16 3H18.5C18.7761 3 19 3.22386 19 3.5V8.5" stroke="#c3c1c1" stroke-width="1.5" stroke-linecap="round"></path> <path d="M4 22V9.5" stroke="#c3c1c1" stroke-width="1.5" stroke-linecap="round"></path> <path d="M20 9.5V13.5M20 22V17.5" stroke="#c3c1c1" stroke-width="1.5" stroke-linecap="round"></path> <path d="M15 22V17C15 15.5858 15 14.8787 14.5607 14.4393C14.1213 14 13.4142 14 12 14C10.5858 14 9.87868 14 9.43934 14.4393M9 22V17" stroke="#c3c1c1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M14 9.5C14 10.6046 13.1046 11.5 12 11.5C10.8954 11.5 10 10.6046 10 9.5C10 8.39543 10.8954 7.5 12 7.5C13.1046 7.5 14 8.39543 14 9.5Z" stroke="#c3c1c1" stroke-width="1.5"></path> </g></svg>
+
+                    <select name="" id="">
+                        <option value="">Selecione uma Associação</option>
+                        <option value="associacao1">Associação 1</option>
+                        <option value="associacao2">Associação 2</option>
+                    </select>
                 </div><!--form__camp-->
             }
 
             <div class="form__camp">
-                <label>Email</label>
-                <input type="email" [(ngModel)]="form.email">
-            </div><!--form__camp-->
-
-            <div class="form__camp">
                 <label>Senha</label>
-                <input type="password" [(ngModel)]="form.senha">
+                <input [type]="senhaSendoExibida ? 'text' : 'password'" placeholder="*******">
+
+                <svg viewBox="-5.36 0 53.748 53.748" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="padlock" d="M616.45,675.728H580.494a3.543,3.543,0,0,0-3.539,3.539V706.4a3.54,3.54,0,0,0,3.539,3.539H616.45a3.54,3.54,0,0,0,3.539-3.539V679.266A3.541,3.541,0,0,0,616.45,675.728Zm1,30.67a1.01,1.01,0,0,1-1,1H580.494a1.011,1.011,0,0,1-1-1V679.266a1.013,1.013,0,0,1,1-1H616.45a1.012,1.012,0,0,1,1,1Zm-12.167-17.379a6.733,6.733,0,0,0-.527-2.621,6.832,6.832,0,0,0-13.09,2.621,7.479,7.479,0,0,0,1.632,4.17,1.7,1.7,0,0,1,.251.877.918.918,0,0,1-.024.22l-1.121,4.137c-.184.677-.407,1.5-.492,1.832a1.31,1.31,0,0,0-.058.41,1.709,1.709,0,0,0,1.043,1.523,3.2,3.2,0,0,0,1.347.275H602.7a3.167,3.167,0,0,0,1.348-.275,1.711,1.711,0,0,0,1.043-1.523,1.606,1.606,0,0,0-.047-.385c-.1-.354-.317-1.179-.5-1.857l-1.125-4.15a.7.7,0,0,1-.024-.209,1.638,1.638,0,0,1,.251-.87A7.477,7.477,0,0,0,605.279,689.019Zm-3.067,1.725a6.68,6.68,0,0,1-.387.636c-.105.15-.159.209-.155.209a4.059,4.059,0,0,0-.818,2.475,3.3,3.3,0,0,0,.111.878l1.125,4.147c.07.266.152.557.226.831H594.63c.075-.275.152-.565.222-.831l1.125-4.149a3.363,3.363,0,0,0,.111-.874,4.057,4.057,0,0,0-.814-2.472c0-.005-.049-.062-.155-.211a4.8,4.8,0,0,1-.911-2.364,4.216,4.216,0,0,1,.743-2.393,4.224,4.224,0,0,1,6.867-.212,4.223,4.223,0,0,1,.921,2.6A3.942,3.942,0,0,1,602.212,690.744Zm-16.289-17.42c0-1.147,0-1.968,0-2.042a12.552,12.552,0,1,1,25.1,0c0,.059,0,.924,0,2.042h2.543v-2.042h0a15.1,15.1,0,0,0-30.19,0c0,.1,0,.912,0,2.042Z" transform="translate(-576.955 -656.189)" fill="#c3c1c1"></path> </g></svg>
+                
+
+                @if (senhaSendoExibida) {
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"(click)="esconderSenha()">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M14.83 9.17999C14.2706 8.61995 13.5576 8.23846 12.7813 8.08386C12.0049 7.92926 11.2002 8.00851 10.4689 8.31152C9.73758 8.61453 9.11264 9.12769 8.67316 9.78607C8.23367 10.4444 7.99938 11.2184 8 12.01C7.99916 13.0663 8.41619 14.08 9.16004 14.83" stroke="#c3c1c1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M12 16.01C13.0609 16.01 14.0783 15.5886 14.8284 14.8384C15.5786 14.0883 16 13.0709 16 12.01" stroke="#c3c1c1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M17.61 6.39004L6.38 17.62C4.6208 15.9966 3.14099 14.0944 2 11.99C6.71 3.76002 12.44 1.89004 17.61 6.39004Z" stroke="#c3c1c1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M20.9994 3L17.6094 6.39" stroke="#c3c1c1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M6.38 17.62L3 21" stroke="#c3c1c1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M19.5695 8.42999C20.4801 9.55186 21.2931 10.7496 21.9995 12.01C17.9995 19.01 13.2695 21.4 8.76953 19.23" stroke="#c3c1c1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g>
+                    </svg>
+                } @else {
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" (click)="mostrarSenha()">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 16.01C14.2091 16.01 16 14.2191 16 12.01C16 9.80087 14.2091 8.01001 12 8.01001C9.79086 8.01001 8 9.80087 8 12.01C8 14.2191 9.79086 16.01 12 16.01Z" stroke="#c3c1c1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M2 11.98C8.09 1.31996 15.91 1.32996 22 11.98" stroke="#c3c1c1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M22 12.01C15.91 22.67 8.09 22.66 2 12.01" stroke="#c3c1c1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g>
+                    </svg>
+                }
             </div><!--form__camp-->
 
-            <div class="form__camp">
-                <label>Confirmar Senha</label>
-                <input type="password" [(ngModel)]="confirmarSenha">
-            </div><!--form__camp-->
+            <button type="submit">Criar Conta</button>
 
-            <button type="submit">CRIAR CONTA</button>
+            <div class="login">
+                <p>Já tem conta?</p>
+                <a [routerLink]="['/iniciar-sessao']">Clique aqui</a>
+            </div><!--login-->
         </form>
-
-        <p>Já tem conta? Clique <a [routerLink]="['/iniciar-sessao']">  aqui</a></p> 
     </main>
+
+    <div class="mancha__verde"></div>
 </div><!--cadastro__container-->

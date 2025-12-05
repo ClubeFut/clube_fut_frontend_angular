@@ -7,6 +7,20 @@ $bg__color__input: #ebe8e8;
 $border__color__input: #d9d9d9;
 $color__h2__form: #333;
 
+@mixin posicao_altura_index_icones_principais_form(){
+    position: absolute;
+    top: 35px;
+    left: 15px;
+    z-index: 990;
+}
+
+@mixin posicao_altura_index_icones_secundarios_form(){
+    position: absolute;
+    top: 35px;
+    right: 15px;
+    z-index: 990;
+}
+
 .iniciar__sessao__container{
     background-color: $bg__color;
     width: 100dvw;
@@ -67,10 +81,19 @@ $color__h2__form: #333;
 
                     svg{
                         &:first-of-type{
-                            position: absolute;
-                            top: 35px;
-                            left: 15px;
-                            z-index: 990;
+                            @include posicao_altura_index_icones_principais_form();
+                        }
+                    }
+                }
+
+                &:nth-of-type(2){
+                    svg{
+                        &:first-of-type{
+                            @include posicao_altura_index_icones_principais_form();
+                        }
+                        
+                        &:nth-of-type(2), &:nth-of-type(3){
+                            @include posicao_altura_index_icones_secundarios_form();
                         }
                     }
                 }
@@ -86,7 +109,7 @@ $color__h2__form: #333;
                     border-radius: 12px;
                     border: 1px solid $border__color__input;
                     background-color: $bg__color__input;
-                    padding: 8px 50px;
+                    padding: 8px 60px;
                 }
 
                 svg{
@@ -104,6 +127,7 @@ $color__h2__form: #333;
             }
 
             button{
+                margin-top: 80px;
                 width: 100%;
                 height: 50px;
                 border-radius: 15px;
@@ -114,7 +138,7 @@ $color__h2__form: #333;
                 color: $bg__color__input;
             }
 
-            .regsiter{
+            .register{
                 display: flex;
                 flex-direction: row;
                 margin-top: 25px;

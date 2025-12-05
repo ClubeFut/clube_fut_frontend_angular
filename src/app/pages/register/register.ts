@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Conta } from '../../services/conta';
-import { RouterLink } from "@angular/router";
+import { RouterModule } from "@angular/router";
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
@@ -8,13 +8,15 @@ import { FormsModule } from '@angular/forms';
   selector: 'app-register',
   imports: [
     CommonModule,
-    RouterLink,
+    RouterModule,
     FormsModule
   ],
   templateUrl: './register.html',
   styleUrl: './register.scss',
 })
 export class Register {
+  senhaSendoExibida: boolean = false;
+
   /**dados form */
   confirmarSenha: string = "";
   form = {
@@ -80,5 +82,13 @@ export class Register {
         console.log(err);
       }
     })
+  }
+
+  mostrarSenha(){
+    this.senhaSendoExibida = true;
+  }
+
+  esconderSenha(){
+    this.senhaSendoExibida = false;
   }
 }
