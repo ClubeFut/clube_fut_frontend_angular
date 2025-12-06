@@ -1,1 +1,32 @@
-<p>games works!</p>
+<div class="jogos__container">
+    <header>
+        <h2>Jogos</h2>
+
+        <div class="jogos__filtro__acoes">
+            <button type="button" class="active" id="btn__todos" (click)="mostreTodosJogos()">Todos</button>
+            <button type="button" id="btn__personalizado" (click)="mostreJogosFiltroPersonalizado()">Personalizado</button>
+        </div><!--jogos__filtro__acoes-->
+
+        <form action="" class="jogos__filtros" *ngIf="estaSendoExibidoFiltroPersonalizados">
+            <div class="filtro__camp">
+                <label>De</label>
+
+                <input type="date">
+            </div><!--filtro__camp-->
+
+            <div class="filtro__camp">
+                <label>Até</label>
+
+                <input type="date">
+            </div><!--filtro__camp-->
+        </form><!--jogoso__filtro-->
+    </header>
+
+    <main>
+
+    </main>
+
+    <footer>
+        <app-footer></app-footer>
+    </footer>
+</div><!--jogos__container-->

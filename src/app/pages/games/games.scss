@@ -1,0 +1,79 @@
+$bg__main: #F0FBF7;
+$cor__branca: #fff;
+$bg__estatistica__unica__azul: #2B7FFF;
+$bg__estatistica__unica__verde: #00C950;
+$bg__estatistica__unica__laranja: #FF6900;
+$bg__estatistica__unica__lilas: #AD46FF;
+$bg__aqua: #F3E8FF;
+
+.jogos__container{
+    background-color: $bg__main;
+    min-height: 100dvh;
+    height: auto;
+    width: 100dvw;
+    padding-bottom: 120px;
+
+    header{
+        background-color: $cor__branca;
+        box-shadow: 1PX 0 0 2PX rgba(0,0,0,0.1);
+        padding: 20px;
+
+        .jogos__filtro__acoes{
+            margin-top: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            button{
+                width: 160px;
+                max-width: 100%;
+                height: 40px;
+                border: 0;
+                border-radius: 15px;
+                font-size: 16px;
+                font-weight: 400;
+                color: #333;
+            }
+
+            .active{
+                background-color: $bg__estatistica__unica__azul;
+                color: $cor__branca;
+            }
+        }
+
+        form{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 20px;
+
+            .filtro__camp{
+                label{
+                    font-size: 17px;
+                    font-weight: 500;
+                    margin-bottom: 5px;
+                }
+
+                input{
+                    width: 160px;
+                    max-width: 100%;
+                    height: 30px;
+                    outline: 0;
+                    border-radius: 10px;
+                    border: 1px solid #333;
+                }
+            }
+        }
+    }
+
+    main{
+        background-color: $bg__main;
+    }
+
+    footer{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
+}
