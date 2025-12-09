@@ -1,4 +1,8 @@
 $cor__azul__fraco: #F3E8FF;
+$cor__cinza__fraco: #d3cfcf99;
+$cor__cinza__mediano: #7c7b7b99;
+$cor__preto__claro: rgba(0,0,0,0.1);
+$cor__cinza__70__porcento: #5a5858;
 
 @mixin display__flex__row{
     display: flex;
@@ -9,13 +13,13 @@ $cor__azul__fraco: #F3E8FF;
 @mixin custom__h3{
     font-size: 14px;
     font-weight: 300;
-    color: #5a5858;
+    color: $cor__cinza__70__porcento;
     margin-left: 5px
 }
 
 .card__jogos__container{
     margin: 20px auto;
-    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.1);
+    box-shadow: 1px 1px 1px 1px $cor__preto__claro;
     border-radius: 15px;
     width: 1000px;
     max-width: 92%;
@@ -60,7 +64,7 @@ $cor__azul__fraco: #F3E8FF;
 
                 &:last-child{
                     margin-top: 5px;
-                    color: #7c7b7b99;
+                    color: $cor__cinza__mediano;
                 }
             }
         }
@@ -78,7 +82,7 @@ $cor__azul__fraco: #F3E8FF;
         width: 100%;
         height: 1px;
         margin: 25px 0 10px 0;
-        background-color: #d3cfcf99;
+        background-color: $cor__cinza__fraco;
     }
 
     .local{
