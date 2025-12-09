@@ -23,7 +23,20 @@
     </header>
 
     <main>
-
+        <div class="card__jogos__box">
+            @for (jogo of jogos; track $index) {
+                <app-card-games
+                    [dia]="jogo.data_hora.data.dia"
+                    [mes]="jogo.data_hora.data.mes"
+                    [ano]="jogo.data_hora.data.ano"
+                    [horas]="jogo.data_hora.hora.horas"
+                    [minutos]="jogo.data_hora.hora.minutos"
+                    [timeUm]="jogo.times.time_um"
+                    [timeDois]="jogo.times.time_dois"
+                    [local]="jogo.local.nome"
+                ></app-card-games>
+            }
+        </div><!--card__jogos__box-->
     </main>
 
     <footer>
