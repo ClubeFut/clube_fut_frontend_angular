@@ -2,6 +2,11 @@ $bg__header: #008D38;
 $cor__verde__fraca: #0ec5575e;
 $cor__branca: #fff;
 $cor__branco__azulado: #F9FAFB;
+$cor__verde__svg__fundo: #DAF7E7;
+$cor__roxa__svg__fundo: #DBEAFE;
+$cor__lilas__svg__fundo: #F3E8FF;
+$cor__branca__fraca__h2__descricao: #777;
+$cor__branca__fraca__h3__descricao: #333;
 
 .perfil__container{
     background-color: $cor__branco__azulado;
@@ -70,16 +75,15 @@ $cor__branco__azulado: #F9FAFB;
 
         .perfil__cards__jogos{
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            width: 400px;
+            grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+            width: 380px;
+            max-width: 100%;
             height: auto;
             position: relative;
             top: -100px;
+            margin: 0 auto;
 
             .perfil__card__unico{
-                position: relative;
-                left: 50%;
-                transform: translateX(-53%);
                 width: 160px;
                 max-width: 90%;
                 height: auto;
@@ -88,6 +92,7 @@ $cor__branco__azulado: #F9FAFB;
                 border-radius: 10px;
                 background-color: $cor__branca;
                 padding: 20px;
+                margin-left: 15px;
 
                 &:nth-of-type(3),
                 &:nth-of-type(4){
@@ -138,9 +143,64 @@ $cor__branco__azulado: #F9FAFB;
                 display: flex;
                 flex-direction: row;
                 align-items: center;
+                margin-bottom: 16px;
 
                 &:first-of-type{
                     margin-top: 15px;
+
+                    .contato__unico__image{
+                        background-color: $cor__verde__svg__fundo;    
+                    }
+                }
+
+                &:nth-of-type(2){
+                    .contato__unico__image{
+                        background-color: $cor__roxa__svg__fundo;
+
+                        svg{
+                            width: 26px;
+                            height: 26px;
+                        }
+                    }
+                }
+
+                &:nth-of-type(3){
+                    margin-bottom: 0;
+
+                    .contato__unico__image{
+                        background-color: $cor__lilas__svg__fundo;
+                    
+                        svg{
+                            width: 26px;
+                            height: 26px;
+                        }
+                    }
+                }
+
+                .contato__unico__image{
+                    padding: 8px 10px;
+                    border-radius: 15px;
+
+                    svg{
+                        width: 28px;
+                        height: 28px;
+                    }
+                }
+
+                .contato__titulo__descricao{
+                    margin-left: 15px;
+
+                    h2{
+                        font-size: 15px;
+                        font-weight: 400;
+                        color: $cor__branca__fraca__h2__descricao;
+                    }
+
+                    h3{
+                        margin-top: 4px;
+                        font-weight: 400;
+                        color: $cor__branca__fraca__h3__descricao;
+                    }
                 }
             }
         }
