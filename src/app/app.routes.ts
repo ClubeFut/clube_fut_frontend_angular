@@ -4,6 +4,7 @@ import { Login } from './pages/login/login';
 import { Register } from './pages/register/register';
 import { Games } from './pages/games/games';
 import { Profile } from './pages/profile/profile';
+import { Association } from './pages/association/association';
 
 export const routes: Routes = [
     {
@@ -25,6 +26,10 @@ export const routes: Routes = [
     {
         path: "perfil",
         component: Profile
+    },
+    {
+        path: "associacao",
+        component: Association
     },
     {
         path: "**",
