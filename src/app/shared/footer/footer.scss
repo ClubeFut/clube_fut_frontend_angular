@@ -1,3 +1,5 @@
+$cor__verde__ativo: #00A63E;
+
 .footer__container{
     width: 100dvw;
     padding: 7px 30px;
@@ -37,6 +39,17 @@
                 font-size: 14px;
                 font-weight: 300;
                 margin-top: 4px;
+                color: #c3c1c1;
+            }
+        }
+
+        .ativo {
+            h2 {
+                color: $cor__verde__ativo; 
+            }
+
+            svg path{
+                stroke: $cor__verde__ativo;
             }
         }
     }
