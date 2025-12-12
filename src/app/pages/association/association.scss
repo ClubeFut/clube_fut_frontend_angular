@@ -1,0 +1,93 @@
+$cor__azul: #145DFB;
+$cor__verde: #00A44C;
+$cor__branco__esverdeado: #DBEAFE;
+$cor__branco__azulado: #F9FAFB;
+$cor__branca: #fff;
+$cor__laranja: #D08700;
+$cor__lilas: #A232FF;
+$cor__lilas__clara: #B254FE;
+$cor__amarelo: #FFF085;
+$cor__amarelo__claro: #FFF9EB;
+$cor__fundo__nossos__times: #FBFCFD;
+$cor__primeiro__card__nossos__times: #F0FDF4;
+$cor__segundo__card__nossos__times: #FEFCE8;
+$cor__terceiro__card__nossos__times: #FEF2F2;
+$cor__primeiro__bg__icone__informacoes: #DBEAFE;
+$cor__segundoo__bg__icone__informacoes: #F3E8FF;
+$cor__terceiro__bg__icone__informacoes: #DCFCE7;
+$cor__quarto__bg__icone__informacoes: #FFEDD4;
+
+.associacao__container{
+    background-color: $cor__branco__azulado;
+    padding-bottom: 100px;
+
+    .associacao__dados{
+        background: linear-gradient(to bottom right, $cor__azul, $cor__verde);
+        width: 100%;
+        height: auto;
+        padding: 40px 30px 140px 30px;
+        border-bottom-left-radius: 70px;
+        border-bottom-right-radius: 70px;
+
+        h2{
+            color: $cor__branca;
+            font-size: 21px;
+            font-weight: 600;
+
+            &:nth-of-type(2){
+                text-align: center;
+            }
+        }
+
+        .associacao__logo{
+            background-color: $cor__branca;
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            margin: 40px auto 20px auto;
+            position: relative;
+            box-shadow: 1px 1px 1px 5px rgba(0,0,0,0.1);
+
+            svg{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                width: 55px;
+                height: 55px;
+            }
+        }
+
+        .data__fundacao{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin-top: 15px;
+
+            svg{
+                width: 20px;
+                height: 20px;
+            }
+
+            h3{
+                color: $cor__branco__esverdeado;
+                font-size: 14px;
+                font-weight: 400;
+                margin-left: 8px;
+            }
+        }
+    }
+}
+
+main{
+    .estatistica__associacao{
+
+    }
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
